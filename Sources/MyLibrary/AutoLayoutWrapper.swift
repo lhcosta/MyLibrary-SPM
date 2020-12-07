@@ -8,7 +8,7 @@
 import UIKit
 
 @propertyWrapper
-class AutoLayout<View: UIView> {
+open class AutoLayout<View: UIView> {
 
     private lazy var view: View = {
         let view = View(frame: .zero)
@@ -16,11 +16,11 @@ class AutoLayout<View: UIView> {
         return view
     }()
     
-    init(wrappedValue: View) {
+    public init(wrappedValue: View) {
         self.view = wrappedValue
     }
     
-    var wrappedValue: View {
+    public var wrappedValue: View {
         get { view }
         set { view = newValue }
     }

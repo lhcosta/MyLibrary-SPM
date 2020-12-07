@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewCodable {
+public protocol ViewCodable {
     
     func setupViews()
     
