@@ -20,7 +20,7 @@ open class AutoLayout<View: UIView> {
         self.view = wrappedValue
     }
     
-    public var wrappedValue: View {
+    open var wrappedValue: View {
         get { view }
         set { view = newValue }
     }

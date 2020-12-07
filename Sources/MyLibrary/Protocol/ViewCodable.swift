@@ -19,7 +19,7 @@ public protocol ViewCodable {
     
 }
 
-extension ViewCodable {
+public extension ViewCodable {
     
     func setupViews() {
         setupViewHierarchy()
